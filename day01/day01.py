@@ -1,5 +1,4 @@
 import os
-import numpy as np
 from itertools import accumulate
 
 import time
@@ -14,7 +13,6 @@ def main():
     with open(inputFile) as f:
         lines = f.read().splitlines()
     
-    
     start_time = time.time()
     
     # part1
@@ -24,7 +22,7 @@ def main():
     part2 = aP.index(-1)+1
     duration = int((time.time() - start_time) * 1000000)
 
-    print(f"AoC 2015\nDay {day}:\n\nPart 1:\t{part1}\nPart 2:\t{part2}\nDuration:\t{duration} ns")
+    print(f"AoC 2015 - Day {day}:\n\nPart 1:\t{part1}\nPart 2:\t{part2}\nDuration:\t{duration} ns")
 
    
 if __name__ == "__main__":
